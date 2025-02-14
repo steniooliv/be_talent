@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Be Talent DEV",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main/main_dev.dart",
+      "args": ["--flavor", "dev", "--dart-define-from-file", ".env_dev"]
+    },
+    {
+      "name": "Be Talent PROD",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main/main_prod.dart",
+      "args": ["--flavor", "prod", "--dart-define-from-file", ".env"]
+    },
+    {
+      "name": "Be Talent Release",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "program": "lib/main/main_dev.dart",
+      "args": ["--flavor", "prod", "--dart-define-from-file", ".env"]
+    },
+    {
+      "name": "design_system",
+      "cwd": "lib/design_system",
+      "request": "launch",
+      "type": "dart"
+    },
+  ]
+}
