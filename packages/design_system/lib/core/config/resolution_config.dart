@@ -1,4 +1,4 @@
-import 'package:design_system/core/core.dart';
+import 'package:design_system/core/config/resolution_size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
