@@ -1,5 +1,4 @@
 import 'package:design_system/design_system.dart';
-import 'package:design_system/src/atoms/image/image.dart';
 
 class ImageExample extends BaseExample {
   ImageExample({
