@@ -8,6 +8,7 @@ class BeImage extends ImageComponent {
     super.size,
     super.color,
     super.package,
+    super.fit,
   }) : super(
           type: ImageEnum.assetSvg,
         );
@@ -19,6 +20,7 @@ class BeImage extends ImageComponent {
     super.height,
     super.color,
     super.package,
+    super.fit,
   }) : super(
           type: ImageEnum.assetImage,
         );
@@ -29,6 +31,7 @@ class BeImage extends ImageComponent {
     super.size,
     super.color,
     super.package,
+    super.fit,
   }) : super(
           type: ImageEnum.networkSvg,
         );
@@ -40,6 +43,7 @@ class BeImage extends ImageComponent {
     super.height,
     super.color,
     super.package,
+    super.fit,
   }) : super(
           type: ImageEnum.networkImage,
         );
