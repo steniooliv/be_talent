@@ -25,11 +25,7 @@ class BadgeComponent extends StatelessWidget {
       label: label != null
           ? Text(
               label!,
-              style: TextStyle(
-                fontFamily: 'Inter',
-                fontSize: 10.sp,
-                fontWeight: FontWeight.w700,
-              ),
+              style: BeTextStyles.badge.copyWith(color: BeColors.white),
             )
           : null,
       child: icon != null

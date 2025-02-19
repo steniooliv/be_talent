@@ -39,6 +39,11 @@ flutter:
         - asset: lib/assets/fonts/HelveticaNeueRegular.otf
           weight: 400
 
+    - family: Inter
+      fonts:
+        - asset: lib/assets/fonts/Inter-VariableFont.ttf
+          weight: 700
+
     - family: BeTalentIcons
       fonts:
         - asset: lib/assets/fonts/BeTalentIcons.ttf

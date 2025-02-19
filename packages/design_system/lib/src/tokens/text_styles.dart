@@ -24,4 +24,13 @@ class BeTextStyles {
     fontSize: 16.sp,
     height: 1.22.h,
   );
+
+  static final badge = TextStyle(
+    fontFamily: 'Inter',
+    fontVariations: [
+      FontVariation.weight(700),
+    ],
+    fontSize: 10.sp,
+    height: 1.2.h,
+  );
 }
