@@ -5,7 +5,9 @@ publish_to: "none"
 environment:
   sdk: ^3.6.1
 
-workspace:
-  - app/be_talent/
-  - app/ds_example/
-  - packages/design_system/
+# Enable the following line to run the package in a monorepo.
+# Waiting for resolve issue https://github.com/flutter/flutter/issues/160142
+# workspace:
+#   - apps/be_talent/
+#   - apps/ds_example/
+#   - packages/design_system/
