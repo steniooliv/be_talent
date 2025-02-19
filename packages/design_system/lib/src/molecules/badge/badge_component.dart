@@ -23,9 +23,9 @@ class BadgeComponent extends StatelessWidget {
       alignment: Alignment.topRight,
       padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 4.h),
       label: label != null
-          ? Text(
+          ? BeText.badge(
               label!,
-              style: BeTextStyles.badge.copyWith(color: BeColors.white),
+              color: BeColors.white,
             )
           : null,
       child: icon != null
