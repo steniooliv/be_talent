@@ -1,6 +1,4 @@
 import 'package:design_system/design_system.dart';
-import 'package:design_system/src/organisms/app_bar/app_bar.dart';
-import 'package:flutter/material.dart';
 
 class AppBarExample extends BaseExample {
   AppBarExample({
@@ -13,38 +11,13 @@ class AppBarExample extends BaseExample {
         WidgetExample(
           title: 'Standard',
           widget: BeAppBar.standard(
-            title: Align(
-              alignment: Alignment.centerLeft,
-              child: CircleAvatar(
-                backgroundColor: BeColors.gray05,
-                radius: 20.r,
-                child: Text(
-                  'SO',
-                  style: BeTextStyles.headline3,
-                ),
-              ),
+            title: BeAvatar.standard(
+              label: 'CG',
             ),
             actions: [
-              IconButton(
-                onPressed: () {},
-                icon: Badge(
-                  offset: Offset(-3, 0),
-                  backgroundColor: BeColors.primary,
-                  alignment: Alignment.topRight,
-                  padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 4.h),
-                  label: Text(
-                    '02',
-                    style: TextStyle(
-                      fontFamily: 'Inter',
-                      fontSize: 10.sp,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  child: Icon(
-                    BeIcons.bell,
-                    size: 32.w,
-                  ),
-                ),
+              BeBadge.standard(
+                icon: BeIcons.bell,
+                label: '02',
               ),
             ],
             automaticallyImplyLeading: false,

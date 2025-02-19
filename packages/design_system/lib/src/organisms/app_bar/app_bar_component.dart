@@ -20,6 +20,7 @@ class AppBarComponent extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      centerTitle: false,
       title: _buildTitle(),
       automaticallyImplyLeading: automaticallyImplyLeading,
       leading: leading,
