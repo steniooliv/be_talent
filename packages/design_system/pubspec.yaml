@@ -7,14 +7,19 @@ environment:
   sdk: ^3.6.1
   flutter: ">=1.17.0"
 
-resolution: workspace
+# Enable the following line to run the package in a monorepo.
+# Waiting for resolve issue https://github.com/flutter/flutter/issues/160142
+#resolution: workspace
 
 dependencies:
   flutter:
     sdk: flutter
-  
+
   ## UI
   flutter_screenutil: ^5.9.3
+
+  ## Utils
+  flutter_svg: ^2.0.10+1
 
 dev_dependencies:
   flutter_test:
@@ -22,20 +27,18 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
-
-assets:
-  images:
+  assets:
     - lib/assets/images/png/
     - lib/assets/images/svg/
 
   fonts:
     - family: HelveticaNeue
-      fonts: 
-        - assets: lib/assets/fonts/HelveticaNeueMedium.otf
+      fonts:
+        - asset: lib/assets/fonts/HelveticaNeueMedium.otf
           weight: 500
-        - assets: lib/assets/fonts/HelveticaNeueRegular.otf
+        - asset: lib/assets/fonts/HelveticaNeueRegular.otf
           weight: 400
+
     - family: BeTalentIcons
       fonts:
-        - assets: lib/assets/fonts/BeTalentIcons.ttf
-
+        - asset: lib/assets/fonts/BeTalentIcons.ttf

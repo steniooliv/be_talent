@@ -1,6 +1,5 @@
 name: ds_example
 description: "A new Flutter project."
-
 publish_to: "none"
 
 version: 1.0.0+1
@@ -8,15 +7,16 @@ version: 1.0.0+1
 environment:
   sdk: ^3.6.1
 
-resolution: workspace
+# Enable the following line to run the package in a monorepo.
+# Waiting for resolve issue https://github.com/flutter/flutter/issues/160142
+#resolution: workspace
 
 dependencies:
   flutter:
     sdk: flutter
 
   design_system:
-
-  cupertino_icons: ^1.0.8
+    path: ../../packages/design_system
 
 dev_dependencies:
   flutter_test:
@@ -26,3 +26,16 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  fonts:
+    - family: HelveticaNeue
+      fonts:
+        - asset: packages/design_system/assets/fonts/HelveticaNeueMedium.otf
+          weight: 500
+        - asset: packages/design_system/assets/fonts/HelveticaNeueRegular.otf
+          weight: 400
+      
+    - family: BeTalentIcons
+      fonts:
+        - asset: packages/design_system/assets/fonts/BeTalentIcons.ttf
+  

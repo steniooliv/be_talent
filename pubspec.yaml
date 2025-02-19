@@ -1,6 +1,5 @@
-name: be_talent_monorepo
+name: _
 description: "Be Talent Monorepo"
-
 publish_to: "none"
 
 environment:

@@ -8,7 +8,9 @@ version: 1.0.0+1
 environment:
   sdk: ^3.6.1
 
-resolution: workspace
+# Enable the following line to run the package in a monorepo.
+# Waiting for resolve issue https://github.com/flutter/flutter/issues/160142
+#resolution: workspace
 
 dependencies:
   flutter:
