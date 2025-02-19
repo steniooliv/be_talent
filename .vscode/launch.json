@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Be Talent Dev Debug",
-      "cwd": "app/be_talent",
+      "cwd": "apps/be_talent",
       "request": "launch",
       "type": "dart",
       "program": "lib/main/main_dev.dart",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Be Talent Prod Debug",
-      "cwd": "app/be_talent",
+      "cwd": "apps/be_talent",
       "request": "launch",
       "type": "dart",
       "program": "lib/main/main_prod.dart",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Be Talent Prod Release",
-      "cwd": "app/be_talent",
+      "cwd": "apps/be_talent",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release",
@@ -31,20 +31,20 @@
     },
     {
       "name": "ds_example",
-      "cwd": "app/ds_example",
+      "cwd": "apps/ds_example",
       "request": "launch",
       "type": "dart"
     },
     {
       "name": "ds_example (profile mode)",
-      "cwd": "app/ds_example",
+      "cwd": "apps/ds_example",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"
     },
     {
       "name": "ds_example (release mode)",
-      "cwd": "app/ds_example",
+      "cwd": "apps/ds_example",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release"
