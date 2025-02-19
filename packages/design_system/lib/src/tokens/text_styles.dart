@@ -9,6 +9,7 @@ class BeTextStyles {
     fontWeight: FontWeight.w500,
     fontSize: 20.sp,
     height: 1.22.h,
+    color: BeColors.black,
   );
 
   static final headline2 = TextStyle(
@@ -16,6 +17,7 @@ class BeTextStyles {
     fontWeight: FontWeight.w500,
     fontSize: 16.sp,
     height: 1.22.h,
+    color: BeColors.black,
   );
 
   static final headline3 = TextStyle(
@@ -23,6 +25,7 @@ class BeTextStyles {
     fontWeight: FontWeight.w400,
     fontSize: 16.sp,
     height: 1.22.h,
+    color: BeColors.black,
   );
 
   static final badge = TextStyle(
@@ -32,5 +35,6 @@ class BeTextStyles {
     ],
     fontSize: 10.sp,
     height: 1.2.h,
+    color: BeColors.black,
   );
 }
