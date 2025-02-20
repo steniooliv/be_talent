@@ -20,5 +20,11 @@ class AvatarExample extends BaseExample {
             label: 'SO',
           ),
         ),
+        WidgetExample(
+          title: 'Standard with Placeholder',
+          widget: BeAvatar.standard(
+            imagePath: '',
+          ),
+        ),
       ];
 }

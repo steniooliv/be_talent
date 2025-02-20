@@ -16,21 +16,35 @@ class AvatarComponent extends StatelessWidget {
     return CircleAvatar(
       backgroundColor: BeColors.gray05,
       radius: 22.5.w,
-      child: imagePath == null
-          ? BeText.headline3(
-              label!,
-              textHeightBehavior: TextHeightBehavior(
-                applyHeightToLastDescent: false,
-              ),
-            )
-          : ClipRRect(
-              borderRadius: BorderRadius.all(Radius.circular(20)).r,
-              child: BeImage.imageNetwork(
-                height: 40.h,
-                imagePath: imagePath!,
-                fit: BoxFit.contain,
-              ),
-            ),
+      child: _buildAvatar(),
+    );
+  }
+
+  Widget _buildAvatar() {
+    if (imagePath == null) {
+      return BeText.headline3(
+        label!,
+        textHeightBehavior: TextHeightBehavior(
+          applyHeightToLastDescent: false,
+        ),
+      );
+    }
+    if (imagePath != null && imagePath!.isNotEmpty) {
+      return ClipRRect(
+        borderRadius: BorderRadius.all(Radius.circular(50)).r,
+        child: BeImage.imageNetwork(
+          height: 50.h,
+          imagePath: imagePath!,
+          fit: BoxFit.contain,
+        ),
+      );
+    }
+
+    return BeImage.imageAsset(
+      height: 50.h,
+      imagePath: 'lib/assets/images/png/avatar_placeholder.png',
+      fit: BoxFit.contain,
+      package: 'design_system',
     );
   }
 }
