@@ -25,17 +25,22 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
-  uses-material-design: true
-
   fonts:
-    - family: HelveticaNeue
+    - family: Helvetica Neue
       fonts:
-        - asset: packages/design_system/assets/fonts/HelveticaNeueMedium.otf
-          weight: 500
-        - asset: packages/design_system/assets/fonts/HelveticaNeueRegular.otf
+        - asset: lib/assets/fonts/HelveticaNeue-Regular.ttf
           weight: 400
-      
+        - asset: lib/assets/fonts/HelveticaNeue-Medium.ttf
+          weight: 500
+          
+    - family: Inter
+      fonts:
+        - asset: packages/design_system/assets/fonts/Inter-VariableFont.ttf
+          weight: 700
+
     - family: BeTalentIcons
       fonts:
         - asset: packages/design_system/assets/fonts/BeTalentIcons.ttf
+
+  uses-material-design: true
   

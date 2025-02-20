@@ -10,7 +10,7 @@ class AppWidget extends StatelessWidget {
     return ResolutionAppWidget(
       child: MaterialApp(
         theme: ThemeData(
-          fontFamily: 'Ubuntu',
+          fontFamily: 'Helvetica Neue',
           dividerColor: Colors.black26,
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(
