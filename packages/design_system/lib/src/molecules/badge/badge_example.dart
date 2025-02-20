@@ -1,5 +1,5 @@
 import 'package:design_system/design_system.dart';
-import 'package:design_system/src/molecules/badge/badge.dart';
+import 'package:flutter/material.dart';
 
 class BadgeExample extends BaseExample {
   BadgeExample({
@@ -19,8 +19,13 @@ class BadgeExample extends BaseExample {
           title: 'Standard with Icon',
           widget: BeBadge.standard(
             label: '02',
-            icon: BeIcons.bell,
-            iconSize: 32.w,
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                BeIcons.bell,
+                size: 32.w,
+              ),
+            ),
           ),
         ),
       ];

@@ -4,36 +4,29 @@ import 'package:flutter/material.dart';
 class BadgeComponent extends StatelessWidget {
   const BadgeComponent({
     super.key,
-    required this.icon,
     this.label,
+    this.child,
     this.color = BeColors.primary,
-    this.iconSize = 32,
   });
 
   final String? label;
-  final IconData? icon;
+  final Widget? child;
   final Color color;
-  final double iconSize;
 
   @override
   Widget build(BuildContext context) {
     return Badge(
-      offset: Offset(-3, 0),
+      padding: EdgeInsets.all(4.w),
+      offset: Offset(6.w, -20.h),
+      alignment: Alignment.center,
       backgroundColor: color,
-      alignment: Alignment.topRight,
-      padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 4.h),
       label: label != null
           ? BeText.badge(
               label!,
               color: BeColors.white,
             )
           : null,
-      child: icon != null
-          ? Icon(
-              icon,
-              size: iconSize.w,
-            )
-          : null,
+      child: child,
     );
   }
 }

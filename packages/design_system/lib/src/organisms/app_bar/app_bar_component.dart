@@ -21,26 +21,27 @@ class AppBarComponent extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: false,
+      titleSpacing: 20.w,
       title: _buildTitle(),
       automaticallyImplyLeading: automaticallyImplyLeading,
       leading: leading,
-      actions: actions,
+      actions: [
+        ...?actions,
+        SizedBox(width: 20.w),
+      ],
     );
   }
 
   Widget? _buildTitle() {
     if (showLogo) {
-      return Padding(
-        padding: const EdgeInsets.only(left: 4).w,
-        child: Row(
-          children: [
-            BeImage.svgAsset(
-              imagePath: 'lib/assets/images/svg/logo.svg',
-              size: 14.h,
-              package: 'design_system',
-            ),
-          ],
-        ),
+      return Row(
+        children: [
+          BeImage.svgAsset(
+            imagePath: 'lib/assets/images/svg/logo.svg',
+            size: 14.h,
+            package: 'design_system',
+          ),
+        ],
       );
     }
     if (title != null) {

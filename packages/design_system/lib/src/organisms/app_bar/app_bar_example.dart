@@ -1,4 +1,5 @@
 import 'package:design_system/design_system.dart';
+import 'package:flutter/material.dart';
 
 class AppBarExample extends BaseExample {
   AppBarExample({
@@ -16,8 +17,14 @@ class AppBarExample extends BaseExample {
             ),
             actions: [
               BeBadge.standard(
-                icon: BeIcons.bell,
-                label: '02',
+                label: '2',
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    BeIcons.bell,
+                    size: 32.w,
+                  ),
+                ),
               ),
             ],
             automaticallyImplyLeading: false,
