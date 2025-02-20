@@ -4,6 +4,7 @@ import 'package:design_system/src/atoms/text/text_example.dart';
 import 'package:design_system/src/molecules/avatar/avatar_example.dart';
 import 'package:design_system/src/molecules/badge/badge_example.dart';
 import 'package:design_system/src/organisms/app_bar/app_bar_example.dart';
+import 'package:design_system/src/organisms/employee_card/employee_card_example.dart';
 
 class Examples {
   Examples._();
@@ -18,5 +19,6 @@ class Examples {
   ];
   static final organisms = <BaseExample>[
     AppBarExample(),
+    EmployeeCardExample(),
   ];
 }

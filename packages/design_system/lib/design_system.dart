@@ -12,6 +12,7 @@ export 'src/atoms/text/text.dart';
 export 'src/molecules/avatar/avatar.dart';
 export 'src/molecules/badge/badge.dart';
 export 'src/organisms/app_bar/app_bar.dart';
+export 'src/organisms/employee_card/employee_card.dart';
 export 'src/tokens/colors.dart';
 export 'src/tokens/icons.dart';
 export 'src/tokens/sizes.dart';
