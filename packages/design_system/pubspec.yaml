@@ -20,6 +20,7 @@ dependencies:
 
   ## Utils
   flutter_svg: ^2.0.10+1
+  dotted_border: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -32,12 +33,12 @@ flutter:
     - lib/assets/images/svg/
 
   fonts:
-    - family: HelveticaNeue
+    - family: Helvetica Neue
       fonts:
-        - asset: lib/assets/fonts/HelveticaNeueMedium.otf
-          weight: 500
-        - asset: lib/assets/fonts/HelveticaNeueRegular.otf
+        - asset: lib/assets/fonts/HelveticaNeue-Regular.ttf
           weight: 400
+        - asset: lib/assets/fonts/HelveticaNeue-Medium.ttf
+          weight: 500
 
     - family: Inter
       fonts:
