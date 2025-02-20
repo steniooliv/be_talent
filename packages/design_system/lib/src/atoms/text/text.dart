@@ -11,6 +11,7 @@ class BeText extends TextComponent {
     super.textDirection,
     super.textOverflow,
     super.softWrap,
+    super.textHeightBehavior,
   }) : super(
           text: text,
           style: BeTextStyles.headline1.copyWith(color: color),
@@ -25,6 +26,7 @@ class BeText extends TextComponent {
     super.textDirection,
     super.textOverflow,
     super.softWrap,
+    super.textHeightBehavior,
   }) : super(
           text: text,
           style: BeTextStyles.headline2.copyWith(color: color),
@@ -39,6 +41,7 @@ class BeText extends TextComponent {
     super.textDirection,
     super.textOverflow,
     super.softWrap,
+    super.textHeightBehavior,
   }) : super(
           text: text,
           style: BeTextStyles.headline3.copyWith(color: color),
@@ -53,6 +56,7 @@ class BeText extends TextComponent {
     super.textDirection,
     super.textOverflow,
     super.softWrap,
+    super.textHeightBehavior,
   }) : super(
           text: text,
           style: BeTextStyles.badge.copyWith(color: color),

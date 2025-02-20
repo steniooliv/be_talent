@@ -11,6 +11,7 @@ class TextComponent extends StatelessWidget {
     this.textAlign,
     this.textOverflow,
     this.textDirection,
+    this.textHeightBehavior,
     this.softWrap = true,
   });
 
@@ -21,6 +22,7 @@ class TextComponent extends StatelessWidget {
   final TextAlign? textAlign;
   final TextOverflow? textOverflow;
   final TextDirection? textDirection;
+  final TextHeightBehavior? textHeightBehavior;
   final bool softWrap;
 
   @override
@@ -32,6 +34,7 @@ class TextComponent extends StatelessWidget {
       overflow: textOverflow,
       textDirection: textDirection,
       softWrap: softWrap,
+      textHeightBehavior: textHeightBehavior,
       style: style ?? BeTextStyles.headline3,
     );
   }
