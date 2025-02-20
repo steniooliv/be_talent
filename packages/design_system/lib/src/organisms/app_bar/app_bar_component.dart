@@ -20,6 +20,7 @@ class AppBarComponent extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      forceMaterialTransparency: true,
       centerTitle: false,
       titleSpacing: 20.w,
       title: _buildTitle(),
