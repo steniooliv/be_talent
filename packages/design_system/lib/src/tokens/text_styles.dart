@@ -5,7 +5,7 @@ class BeTextStyles {
   BeTextStyles._();
 
   static final headline1 = TextStyle(
-    fontFamily: 'HelveticaNeue',
+    fontFamily: 'Helvetica Neue',
     fontWeight: FontWeight.w500,
     fontSize: 20.sp,
     height: 1.22.h,
@@ -13,7 +13,7 @@ class BeTextStyles {
   );
 
   static final headline2 = TextStyle(
-    fontFamily: 'HelveticaNeue',
+    fontFamily: 'Helvetica Neue',
     fontWeight: FontWeight.w500,
     fontSize: 16.sp,
     height: 1.22.h,
@@ -21,7 +21,7 @@ class BeTextStyles {
   );
 
   static final headline3 = TextStyle(
-    fontFamily: 'HelveticaNeue',
+    fontFamily: 'Helvetica Neue',
     fontWeight: FontWeight.w400,
     fontSize: 16.sp,
     height: 1.22.h,
