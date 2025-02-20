@@ -1,7 +1,6 @@
-import 'dart:developer';
-
 import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -18,7 +17,9 @@ class _SplashPageState extends State<SplashPage> {
         seconds: 3,
       ),
     ).then((value) {
-      log('navigate');
+      if (mounted) {
+        context.go('/employees');
+      }
     });
     super.initState();
   }
