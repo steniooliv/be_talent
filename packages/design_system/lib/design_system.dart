@@ -14,4 +14,5 @@ export 'src/molecules/badge/badge.dart';
 export 'src/organisms/app_bar/app_bar.dart';
 export 'src/tokens/colors.dart';
 export 'src/tokens/icons.dart';
+export 'src/tokens/sizes.dart';
 export 'src/tokens/text_styles.dart';
