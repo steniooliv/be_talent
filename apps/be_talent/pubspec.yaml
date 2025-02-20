@@ -20,6 +20,12 @@ dependencies:
   design_system:
     path: ../../packages/design_system
 
+  ## Dependency Injection
+  get_it: ^8.0.3
+
+  ## Routing
+  go_router: ^14.8.0
+
 
 dev_dependencies:
   flutter_test:
@@ -27,7 +33,6 @@ dev_dependencies:
 
   ## Utils
   flutter_native_splash: ^2.4.4
-
   flutter_lints: ^5.0.0
 
 flutter:
@@ -35,3 +40,21 @@ flutter:
 
   assets:
     - assets/images/png/
+
+  fonts:
+    - family: Helvetica Neue
+      fonts:
+        - asset: lib/assets/fonts/HelveticaNeue-Regular.ttf
+          weight: 400
+        - asset: lib/assets/fonts/HelveticaNeue-Medium.ttf
+          weight: 500
+
+    - family: Inter
+      fonts:
+        - asset: packages/design_system/assets/fonts/Inter-VariableFont.ttf
+          weight: 700
+      
+    - family: BeTalentIcons
+      fonts:
+        - asset: packages/design_system/assets/fonts/BeTalentIcons.ttf
+
