@@ -1,5 +1,4 @@
 import 'package:design_system/design_system.dart';
-import 'package:design_system/src/atoms/shimmer/shimmer.dart';
 
 class ShimmerExample extends BaseExample {
   ShimmerExample({

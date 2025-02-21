@@ -1,5 +1,4 @@
 import 'package:design_system/design_system.dart';
-import 'package:design_system/src/organisms/employee_card/employee_card.dart';
 
 class EmployeeCardExample extends BaseExample {
   EmployeeCardExample({

@@ -8,6 +8,7 @@ export 'core/ui/theme/default_theme.dart';
 export 'core/ui/widgets/resolution_app_widget.dart';
 export 'exports/examples.dart';
 export 'src/atoms/image/image.dart';
+export 'src/atoms/shimmer/shimmer.dart';
 export 'src/atoms/text/text.dart';
 export 'src/molecules/avatar/avatar.dart';
 export 'src/molecules/badge/badge.dart';
