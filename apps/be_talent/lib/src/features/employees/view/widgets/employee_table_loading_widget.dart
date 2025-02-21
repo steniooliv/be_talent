@@ -1,30 +1,14 @@
-import 'package:be_talent/src/core/core.dart';
 import 'package:be_talent/src/features/employees/view/widgets/employee_table_header_widget.dart';
 import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
-class EmployeeTableWidget extends StatelessWidget {
-  const EmployeeTableWidget({
+class EmployeeTableLoadingWidget extends StatelessWidget {
+  const EmployeeTableLoadingWidget({
     super.key,
-    required this.employeeList,
   });
-
-  final List<Employee> employeeList;
 
   @override
   Widget build(BuildContext context) {
-    if (employeeList.isEmpty) {
-      return Padding(
-        padding: const EdgeInsets.only(top: 16).h,
-        child: Center(
-          child: BeText.headline3(
-            'Não há nenhum item para ser exibido',
-            textAlign: TextAlign.center,
-          ),
-        ),
-      );
-    }
     return Container(
       width: double.maxFinite,
       decoration: BoxDecoration(
@@ -49,28 +33,13 @@ class EmployeeTableWidget extends StatelessWidget {
               padding: EdgeInsets.zero,
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
-              itemCount: employeeList.length,
+              itemCount: 10,
               itemBuilder: (context, index) {
-                final employee = employeeList[index];
-
-                return BeEmployeeCard(
-                  imagePath: employee.image ?? '',
-                  name: employee.name,
-                  informations: [
-                    (
-                      info: 'Cargo',
-                      value: employee.job,
-                    ),
-                    (
-                      info: 'Data admissão',
-                      value: DateFormat.yMd('pt_BR')
-                          .format(employee.admissionDate),
-                    ),
-                    (
-                      info: 'Telefone',
-                      value: employee.phone.phoneBR,
-                    ),
-                  ],
+                return Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: BeShimmer.standard(
+                    height: 35.h,
+                  ),
                 );
               },
               separatorBuilder: (context, index) => Divider(
