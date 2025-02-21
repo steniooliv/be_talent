@@ -1,5 +1,6 @@
 import 'package:design_system/design_system.dart';
 import 'package:design_system/src/atoms/image/image_example.dart';
+import 'package:design_system/src/atoms/shimmer/shimmer_example.dart';
 import 'package:design_system/src/atoms/text/text_example.dart';
 import 'package:design_system/src/molecules/avatar/avatar_example.dart';
 import 'package:design_system/src/molecules/badge/badge_example.dart';
@@ -12,6 +13,7 @@ class Examples {
   static final atoms = <BaseExample>[
     ImageExample(),
     TextExample(),
+    ShimmerExample(),
   ];
   static final molecules = <BaseExample>[
     AvatarExample(),

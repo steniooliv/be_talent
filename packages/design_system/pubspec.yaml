@@ -17,6 +17,7 @@ dependencies:
 
   ## UI
   flutter_screenutil: ^5.9.3
+  shimmer: ^3.0.0
 
   ## Utils
   flutter_svg: ^2.0.10+1
