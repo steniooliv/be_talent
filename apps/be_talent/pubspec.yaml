@@ -23,9 +23,19 @@ dependencies:
   ## Dependency Injection
   get_it: ^8.0.3
 
+  ## State Management
+  flutter_bloc: ^9.0.0
+
   ## Routing
   go_router: ^14.8.0
 
+  ## Http
+  dio: ^5.8.0+1
+
+  ## Utils
+  equatable: ^2.0.7
+  dartz: ^0.10.1
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:
