@@ -1,5 +1,6 @@
 extension StringExtension on String {
   String get phoneBR => _phoneBR();
+  String get toQuery => _toQuery();
 
   String _phoneBR() {
     String phone = replaceAll(RegExp(r'\D'), '');
@@ -23,5 +24,16 @@ extension StringExtension on String {
       return hasDDI ? '+55 ($ddd) $start-$end' : '($ddd) $start-$end';
     }
     return phone;
+  }
+
+  String _toQuery() {
+    return toLowerCase()
+        .replaceAllMapped(RegExp(r'[àáâãäå]'), (match) => 'a')
+        .replaceAllMapped(RegExp(r'[èéêë]'), (match) => 'e')
+        .replaceAllMapped(RegExp(r'[ìíîï]'), (match) => 'i')
+        .replaceAllMapped(RegExp(r'[òóôõö]'), (match) => 'o')
+        .replaceAllMapped(RegExp(r'[ùúûü]'), (match) => 'u')
+        .replaceAllMapped(RegExp(r'[ç]'), (match) => 'c')
+        .replaceAllMapped(RegExp(r'[ñ]'), (match) => 'n');
   }
 }
