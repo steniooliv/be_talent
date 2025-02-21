@@ -1,0 +1,36 @@
+name: Android Release
+
+on:
+  push:
+    branches: [release]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.29.0'
+          channel: 'stable'
+
+      - name: Install dependencies
+        working-directory: apps/be_talent
+        run: flutter pub get
+
+      - name: Build APK
+        working-directory: apps/be_talent
+        run: flutter build apk --targe=lib/main/main_prod.dart --flavor=prod --release --split-per-abi 
+
+      - name: Upload Artifact
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "${{ github.workspace }}/apps/be_talent/build/app/outputs/flutter-apk/*.apk"
+          allowUpdates: true
+          makeLatest: true
+          omitBodyDuringUpdate: true
