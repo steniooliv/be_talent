@@ -41,6 +41,7 @@ class _EmployeesPageState extends State<EmployeesPage> {
           automaticallyImplyLeading: false,
           title: BeAvatar.standard(
             label: 'CG',
+            radius: 22.5.w,
           ),
           actions: [
             BeBadge.standard(
