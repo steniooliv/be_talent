@@ -25,7 +25,7 @@ jobs:
 
       - name: Build APK
         working-directory: apps/be_talent
-        run: flutter build apk --targe=lib/main/main_prod.dart --flavor=prod --release --split-per-abi 
+        run: flutter build apk --target=lib/main/main_prod.dart --flavor=prod --release --split-per-abi 
 
       - name: Upload Artifact
         uses: ncipollo/release-action@v1
