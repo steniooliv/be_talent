@@ -9,7 +9,7 @@
 
 Veja o aplicativo em ação!
 
-<video height="480" controls src=".github/uploads/demo-480.mp4" title="Demo"></video>
+<iframe width="358" height="637" src="https://www.youtube.com/embed/ymq2MQI2m4A" title="" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Sumário
 
