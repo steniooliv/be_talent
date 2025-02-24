@@ -25,7 +25,7 @@ class _EmployeeCardComponentState extends State<EmployeeCardComponent> {
   Widget build(BuildContext context) {
     return ExpansionTile(
       tilePadding: EdgeInsets.symmetric(horizontal: 16).w,
-      childrenPadding: EdgeInsets.fromLTRB(16.w, 31.h, 16.w, 0.h),
+      childrenPadding: EdgeInsets.fromLTRB(16.w, 31.h, 16.w, 16.h),
       iconColor: BeColors.primary,
       trailing: ValueListenableBuilder(
         valueListenable: isExpanded,
