@@ -9,7 +9,7 @@
 
 Veja o aplicativo em ação!
 
-![demo](.github/uploads/demo.mp4)
+<video controls src=".github/uploads/demo.mp4" title="Demo"></video>
 
 ## Sumário
 
