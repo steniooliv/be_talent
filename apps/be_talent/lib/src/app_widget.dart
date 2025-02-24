@@ -9,14 +9,8 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResolutionAppWidget(
       child: MaterialApp.router(
-        debugShowCheckedModeBanner: true,
-        theme: ThemeData(
-          useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.white,
-            surface: Colors.white,
-          ),
-        ),
+        title: 'Be Talent',
+        theme: DefaultTheme.light,
         routerConfig: AppRoutes.routes,
       ),
     );
