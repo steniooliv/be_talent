@@ -9,7 +9,7 @@
 
 Veja o aplicativo em ação!
 
-<video controls src=".github/uploads/demo.mp4" title="Demo"></video>
+<video height="480" controls src=".github/uploads/demo-480.mp4" title="Demo"></video>
 
 ## Sumário
 
