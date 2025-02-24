@@ -2,7 +2,11 @@ import 'package:be_talent/src/core/failure/failure.dart';
 import 'package:dio/dio.dart';
 
 class HttpService {
-  final Dio _dio = Dio();
+  HttpService({
+    Dio? dio,
+  }) : _dio = dio ?? Dio();
+
+  final Dio _dio;
 
   Future<Response> get(
     String path, {
