@@ -5,11 +5,11 @@
 
 *Este repositório contém os aplicativos desenvolvidos para o desafio proposto para a vaga de Desenvolvedor Flutter na Be Talent.*
 
-## 🚀 Demo
+## Demo
 
 Veja o aplicativo em ação! O app principal e os exemplos de Design System estão prontos para você testar.
 
-## 📑 **Sumário**
+## Sumário
 
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Clonando o Repositório](#clonando-o-repositório)
@@ -19,7 +19,7 @@ Veja o aplicativo em ação! O app principal e os exemplos de Design System est�
 
 ---
 
-### 🧑‍💻 [Sobre o Projeto](#sobre-o-projeto)
+### [Sobre o Projeto](#sobre-o-projeto) 
 
 Este projeto foi desenvolvido utilizando a última versão do **Flutter** e **Dart** (3.29/3.7) disponível no momento de sua criação. Com a introdução das novas funcionalidades de **workspaces** no Dart, optei por criar um **monorepo**, que possibilita uma melhor organização dos projetos e pacotes.
 
@@ -46,7 +46,7 @@ Para garantir a qualidade do código, realizei testes unitários com **Mockito**
 
 ---
 
-### 💻 [Clonando o Repositório](#clonando-o-repositório)
+### [Clonando o Repositório](#clonando-o-repositório)
 
 Clone o repositório para o seu computador com o seguinte comando:
 
@@ -54,7 +54,7 @@ Clone o repositório para o seu computador com o seguinte comando:
 git clone https://github.com/steniooliv/be_talent
 ```
 
-### 📦 [Baixando as Dependências](#baixando-as-dependências)
+### [Baixando as Dependências](#baixando-as-dependências)
 
 Devido a um problema com o recurso de Workspaces no Dart, criei um script que irá baixar as dependências de todos os projetos automaticamente. Para isso, basta executar o seguinte comando:
 
@@ -63,7 +63,7 @@ Devido a um problema com o recurso de Workspaces no Dart, criei um script que ir
 ```
 Se preferir, você pode baixar as dependências manualmente em cada subpasta contendo um `pubspec.yaml` executando `flutter pub get`.
 
-### 🚀 [Executando os Projetos](#executando-os-projetos)
+### [Executando os Projetos](#executando-os-projetos)
 
 1. Pré-requisitos:
 
@@ -84,8 +84,7 @@ Na barra lateral de Run and Debug, você verá 4 opções de execução:
 
 4. Depois de selecionar o app, clique em Run e veja a magia acontecer! ✨
 
-### ⚙️ [Melhorias e Ajustes Futuros](#melhorias-e-ajustes-futuros)
-
+### [Melhorias e Ajustes Futuros](#melhorias-e-ajustes-futuros)
 Como em todo projeto, sempre há espaço para melhorias! Aqui estão algumas áreas que poderiam ser aprimoradas:
 
 1. Melhoria no Gerenciamento de Workspaces:
@@ -94,5 +93,5 @@ Atualmente, há um problema com o Dart e os workspaces ao gerenciar dependência
 2. Fontes no iOS:
 Durante o desenvolvimento, encontrei um problema com o peso da fonte (weight) da Helvetica no iOS. Ele funcionava bem no Android, mas o iOS não aplicava o peso corretamente. Após abrir uma issue no GitHub, descobri que este problema também afeta fontes nativas em Chinês e Japonês. Para resolver isso, fiz um ajuste na importação do asset da fonte, garantindo que o iOS reconhecesse corretamente o peso. Para acompanhar a issue, clique aqui.
 
-### 🎉 **Conclusão**
+### Conclusão
 Este projeto foi uma ótima oportunidade para explorar as novas funcionalidades do Flutter, como workspaces e Cubit para gerenciamento de estado, além de proporcionar uma ótima base para futuras melhorias e inovações. 🏆
