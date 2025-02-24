@@ -23,6 +23,12 @@ jobs:
         working-directory: apps/be_talent
         run: flutter pub get
 
+      - name: Get Version from pubspec.yaml
+        id: version
+        run: |
+          VERSION=$(grep 'version:' apps/be_talent/pubspec.yaml | awk '{print $2}')
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+
       - name: Build APK
         working-directory: apps/be_talent
         run: flutter build apk --targe=lib/main/main_prod.dart --flavor=prod --release --split-per-abi 
@@ -31,6 +37,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "${{ github.workspace }}/apps/be_talent/build/app/outputs/flutter-apk/*.apk"
+          tag: ${{ env.VERSION }}
           allowUpdates: true
           makeLatest: true
           omitBodyDuringUpdate: true
