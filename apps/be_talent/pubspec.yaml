@@ -41,9 +41,16 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  ## Test
+  mockito: ^5.4.5
+  bloc_test: ^10.0.0
+
   ## Utils
   flutter_native_splash: ^2.4.4
   flutter_lints: ^5.0.0
+  build_runner: ^2.4.15
+  test_coverage_badge: ^0.3.2
+
 
 flutter:
   uses-material-design: true
