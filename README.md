@@ -9,7 +9,7 @@
 
 Veja o aplicativo em ação!
 
-[![Demo](https://raw.githubusercontent.com/steniooliv/be-talent/main/.github/uploads/splash.png)](https://raw.githubusercontent.com/steniooliv/be-talent/main/.github/uploads/demo-480.mp4)
+[![Demo](https://raw.githubusercontent.com/steniooliv/be_talent/main/.github/uploads/splash.png)](https://raw.githubusercontent.com/steniooliv/be_talent/main/.github/uploads/demo-480.mp4)
 
 
 ## Sumário
