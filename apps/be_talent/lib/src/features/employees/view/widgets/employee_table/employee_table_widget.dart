@@ -1,5 +1,5 @@
 import 'package:be_talent/src/core/core.dart';
-import 'package:be_talent/src/features/employees/view/widgets/employee_table_header_widget.dart';
+import 'package:be_talent/src/features/employees/view/widgets/employee_table/employee_table_header_widget.dart';
 import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
