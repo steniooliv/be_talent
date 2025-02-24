@@ -35,6 +35,7 @@ class _EmployeeCardComponentState extends State<EmployeeCardComponent> {
         ),
       ),
       onExpansionChanged: (value) {
+        FocusManager.instance.primaryFocus?.unfocus();
         isExpanded.value = value;
       },
       collapsedIconColor: BeColors.primary,
