@@ -6,16 +6,18 @@ class AvatarComponent extends StatelessWidget {
     super.key,
     this.imagePath,
     this.label,
+    this.radius,
   }) : assert(imagePath == null || label == null);
 
   final String? imagePath;
   final String? label;
+  final double? radius;
 
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
       backgroundColor: BeColors.gray05,
-      radius: 22.5.w,
+      radius: radius ?? 17.w,
       child: _buildAvatar(),
     );
   }

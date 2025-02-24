@@ -5,5 +5,6 @@ class BeAvatar extends AvatarComponent {
     super.key,
     super.imagePath,
     super.label,
+    super.radius,
   });
 }
