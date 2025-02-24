@@ -9,7 +9,8 @@
 
 Veja o aplicativo em ação!
 
-<iframe width="358" height="637" src="https://www.youtube.com/embed/ymq2MQI2m4A" title="" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Demo](https://raw.githubusercontent.com/steniooliv/be-talent/main/.github/uploads/splash.png)](https://raw.githubusercontent.com/steniooliv/be-talent/main/.github/uploads/demo-480.mp4)
+
 
 ## Sumário
 
