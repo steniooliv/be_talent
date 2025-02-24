@@ -9,7 +9,7 @@
 
 Veja o aplicativo em ação!
 
-![](.github/uploads/demo.mp4)
+![demo](.github/uploads/demo.mp4)
 
 ## Sumário
 
