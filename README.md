@@ -1,13 +1,15 @@
 ![coverage](apps/be_talent/coverage/coverage_badge.svg)
 ![flutter](https://img.shields.io/badge/flutter-3.29-blue)
 
-# 🌟 **BE Talent Monorepo** 🌟
+# 🌟 **BE Talent** 🌟
 
 *Este repositório contém os aplicativos desenvolvidos para o desafio proposto para a vaga de Desenvolvedor Flutter na Be Talent.*
 
 ## Demo
 
-Veja o aplicativo em ação! O app principal e os exemplos de Design System estão prontos para você testar.
+Veja o aplicativo em ação!
+
+![](.github/uploads/demo.mp4)
 
 ## Sumário
 
@@ -46,6 +48,7 @@ Para garantir a qualidade do código, realizei testes unitários com **Mockito**
 
 ---
 
+
 ### [Clonando o Repositório](#clonando-o-repositório)
 
 Clone o repositório para o seu computador com o seguinte comando:
@@ -53,6 +56,7 @@ Clone o repositório para o seu computador com o seguinte comando:
 ```bash
 git clone https://github.com/steniooliv/be_talent
 ```
+---
 
 ### [Baixando as Dependências](#baixando-as-dependências)
 
@@ -62,6 +66,8 @@ Devido a um problema com o recurso de Workspaces no Dart, criei um script que ir
 ./script.sh
 ```
 Se preferir, você pode baixar as dependências manualmente em cada subpasta contendo um `pubspec.yaml` executando `flutter pub get`.
+
+---
 
 ### [Executando os Projetos](#executando-os-projetos)
 
@@ -84,7 +90,10 @@ Na barra lateral de Run and Debug, você verá 4 opções de execução:
 
 4. Depois de selecionar o app, clique em Run e veja a magia acontecer! ✨
 
+---
+
 ### [Melhorias e Ajustes Futuros](#melhorias-e-ajustes-futuros)
+
 Como em todo projeto, sempre há espaço para melhorias! Aqui estão algumas áreas que poderiam ser aprimoradas:
 
 1. Melhoria no Gerenciamento de Workspaces:
@@ -93,5 +102,8 @@ Atualmente, há um problema com o Dart e os workspaces ao gerenciar dependência
 2. Fontes no iOS:
 Durante o desenvolvimento, encontrei um problema com o peso da fonte (weight) da Helvetica no iOS. Ele funcionava bem no Android, mas o iOS não aplicava o peso corretamente. Após abrir uma issue no GitHub, descobri que este problema também afeta fontes nativas em Chinês e Japonês. Para resolver isso, fiz um ajuste na importação do asset da fonte, garantindo que o iOS reconhecesse corretamente o peso. Para acompanhar a issue, clique aqui.
 
+---
+
 ### Conclusão
+
 Este projeto foi uma ótima oportunidade para explorar as novas funcionalidades do Flutter, como workspaces e Cubit para gerenciamento de estado, além de proporcionar uma ótima base para futuras melhorias e inovações. 🏆
