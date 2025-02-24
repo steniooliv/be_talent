@@ -1,5 +1,6 @@
 import 'package:be_talent/src/core/core.dart';
 import 'package:be_talent/src/features/employees/data/repositories/employee_repository.dart';
+import 'package:be_talent/src/features/employees/view_model/employee_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class EmployeeViewModel extends Cubit<EmployeeState> {
@@ -26,31 +27,23 @@ class EmployeeViewModel extends Cubit<EmployeeState> {
 
   void searchEmployees(String query) {
     emit(LoadingEmployeeState());
+
     List<Employee> newList = employeeList
-        .where((e) => e.name.toQuery.contains(query.toLowerCase()))
+        .where(
+          (e) => [
+            e.name.toQuery,
+            e.job.toQuery,
+            e.phone.toQuery,
+          ].any((field) => field.contains(query.toQuery)),
+        )
         .toList();
+
+    if (newList.isEmpty) return emit(EmptyEmployeeState());
     emit(SuccessEmployeeState(employeeList: newList));
   }
 
   void searchClear() {
+    if (employeeList.isEmpty) return emit(EmptyEmployeeState());
     emit(SuccessEmployeeState(employeeList: employeeList));
   }
-}
-
-sealed class EmployeeState {}
-
-final class InitialEmployeeState extends EmployeeState {}
-
-final class EmptyEmployeeState extends EmployeeState {}
-
-final class LoadingEmployeeState extends EmployeeState {}
-
-final class FailureEmployeeState extends EmployeeState {
-  FailureEmployeeState({required this.failure});
-  final Failure failure;
-}
-
-final class SuccessEmployeeState extends EmployeeState {
-  SuccessEmployeeState({required this.employeeList});
-  final List<Employee> employeeList;
 }

@@ -1,6 +1,7 @@
 import 'package:be_talent/src/features/employees/view/widgets/employee_table_failure_widget.dart';
 import 'package:be_talent/src/features/employees/view/widgets/employee_table_loading_widget.dart';
 import 'package:be_talent/src/features/employees/view/widgets/employee_table_widget.dart';
+import 'package:be_talent/src/features/employees/view_model/employee_state.dart';
 import 'package:be_talent/src/features/employees/view_model/employee_view_model.dart';
 import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
