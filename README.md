@@ -9,7 +9,8 @@
 
 Veja o aplicativo em ação!
 
-<video height=480 controls src='https://raw.githubusercontent.com/steniooliv/be_talent/main/.github/uploads/demo-480.mp4'></video>
+
+[![Demo](https://raw.githubusercontent.com/steniooliv/be_talent/main/.github/uploads/splash.png)]('https://youtube.com/shorts/ymq2MQI2m4A?si=kh4rMrKnHm5ssQFe')
 
 
 ## Sumário
