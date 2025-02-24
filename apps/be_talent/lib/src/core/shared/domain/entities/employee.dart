@@ -27,6 +27,17 @@ class Employee extends Equatable {
         image,
       ];
 
+  Map<String, dynamic> toMap() {
+    return <String, dynamic>{
+      'id': id,
+      'name': name,
+      'phone': phone,
+      'job': job,
+      'admission_date': admissionDate.toIso8601String(),
+      'image': image,
+    };
+  }
+
   factory Employee.fromMap(Map<String, dynamic> map) {
     return Employee(
       id: map['id'] as String,
