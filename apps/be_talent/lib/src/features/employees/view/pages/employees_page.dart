@@ -1,3 +1,4 @@
+import 'package:be_talent/src/features/employees/view/widgets/employee_snack_bar_widget.dart';
 import 'package:be_talent/src/features/employees/view/widgets/employee_table/employee_table_failure_widget.dart';
 import 'package:be_talent/src/features/employees/view/widgets/employee_table/employee_table_loading_widget.dart';
 import 'package:be_talent/src/features/employees/view/widgets/employee_table/employee_table_widget.dart';
@@ -48,17 +49,7 @@ class _EmployeesPageState extends State<EmployeesPage> {
                 icon: Icon(BeIcons.bell, size: 32.w),
                 onPressed: () {
                   FocusManager.instance.primaryFocus?.unfocus();
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      behavior: SnackBarBehavior.floating,
-                      backgroundColor: BeColors.primary,
-                      content: BeText.headline3(
-                        'Esta funcionalidade estará disponível em breve.',
-                        color: BeColors.white,
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  );
+                  EmployeeSnackBarWidget.show(context);
                 },
               ),
             ),
