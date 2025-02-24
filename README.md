@@ -1,59 +1,95 @@
-# BE Talent Monorepo
-*Este repositório contém os aplicativos desenvolvidos para o desafio proposto para vaga de Desenvolvedor Flutter na Be Talent*
+![coverage](apps/be_talent/coverage/coverage_badge.svg)
+![flutter](https://img.shields.io/badge/flutter-3.29-blue)
 
-## Demo
+# 🌟 **BE Talent Monorepo** 🌟
 
-## Sumário
+*Este repositório contém os aplicativos desenvolvidos para o desafio proposto para a vaga de Desenvolvedor Flutter na Be Talent.*
 
+## 🚀 Demo
 
-### Sobre o Projeto
-Este projeto foi desenvolvido com a última versão do Flutter e Dart (3.29/3.7) disponíveis no momento de sua criação.
-Aproveitando as novidades da versão, criei o projeto em um monorepo para utilizar as novas funcionalidades de workspace nativas do dart, veja um detalhe **aqui**.
-Criei um package *design_system*, contendo as definições de cores, tipografia, componentes e demais definições que estavam presentes no arquivo de *Figma* disponibilizado.
-Dentro da pasta `apps`, há um app de exemplo, neste é possível visualizar todos os componentes disponíveis no `design_system`. E o app `be_talent` que é o aplicativo principal proposto.
+Veja o aplicativo em ação! O app principal e os exemplos de Design System estão prontos para você testar.
 
-Neste, utilizei a nova arquitetura proposta pelo time do Google para o Flutter, o *App Architecture*, baseado em uma arquitetura **MVVM**, onde tenho a chamada da função na **View** para a **ViewModel (Cubit)** e este solicita o **Repository** que solicita o serviço externo (**Service**).
+## 📑 **Sumário**
 
-Utilizei uma estratégia de *Flavors* para executar o app em modo `dev` e `prod`, e também a estrutura de *Feature First*.
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Clonando o Repositório](#clonando-o-repositório)
+- [Baixando as Dependências](#baixando-as-dependências)
+- [Executando os Projetos](#executando-os-projetos)
+- [Melhorias e Ajustes Futuros](#melhorias-e-ajustes-futuros)
 
-Utilizei **Cubit** para gerenciar o estado, como é uma aplicação simples, não houve necessidade de aplicar a verbosidade do BLoC.
+---
 
-Realizei o teste unitário (com o **Mockito**) de toda a aplicação, garantindo e cobrindo os cenários de sucesso e falhas. Com isso consegui na aplicação um **coverage de 99%**.
+### 🧑‍💻 **Sobre o Projeto**
 
-### Clonando o Repositório
-Para clonar o repositório no seu computador, basta executar o comando no seu terminal:
+Este projeto foi desenvolvido utilizando a última versão do **Flutter** e **Dart** (3.29/3.7) disponível no momento de sua criação. Com a introdução das novas funcionalidades de **workspaces** no Dart, optei por criar um **monorepo**, que possibilita uma melhor organização dos projetos e pacotes.
 
-```unix
+Para manter uma estrutura modular e reutilizável, criei o pacote `design_system`, que contém as definições de cores, tipografia, componentes e outras diretrizes que estavam presentes no arquivo de 🌈 **Figma** fornecido. 
+
+Dentro da pasta `apps/`, temos:
+
+- **App de Exemplo**: Um app para visualizar todos os componentes definidos no `design_system`.
+- **Be Talent**: O aplicativo principal proposto no desafio.
+
+💡 **Arquitetura**:  
+Adotei a nova arquitetura **MVVM** recomendada pelo time Flutter, com **Cubit** para gerenciar o estado da aplicação. A arquitetura é composta por:
+
+- **View**: Onde a UI é construída.
+- **ViewModel (Cubit)**: Onde a lógica de controle de estado acontece.
+- **Repository**: Responsável por fazer as chamadas aos serviços externos.
+- **Service**: Realiza a comunicação com APIs ou outros serviços.
+
+### 🛠️ **Flavors e Features**  
+Utilizei **Flavors** para alternar entre ambientes `dev` e `prod` e segui a estratégia de **Feature First** para organização das funcionalidades. Com isso, é possível testar diferentes versões e ambientes com facilidade.
+
+### ✅ **Testes Unitários**  
+Para garantir a qualidade do código, realizei testes unitários com **Mockito** e cobri todos os cenários de sucesso e falhas, alcançando uma **cobertura de 99%** de testes. 🔥
+
+---
+
+### 💻 **Clonando o Repositório**
+
+Clone o repositório para o seu computador com o seguinte comando:
+
+```bash
 git clone https://github.com/steniooliv/be_talent
 ```
 
-### Baixando as Dependências
-Como o recurso de *Workspaces* do dart está com um problema para carregar no bundle os assets de outro projeto (**Issue**), criei um arquivo de script que vai baixar as dependências de todos os projetos, basta executar no terminal:
+### 📦 **Baixando as Dependências**
+Devido a um problema com o recurso de Workspaces no Dart, criei um script que irá baixar as dependências de todos os projetos automaticamente. Para isso, basta executar o seguinte comando:
 
-```unix
+```bash
 ./script.sh
 ```
-Isso vai executar o comando `flutter pub get` em todas as subpastas que contém o arquivo `pubspec.yaml`, você também pode fazer isso manualmente se preferir.
+Se preferir, você pode baixar as dependências manualmente em cada subpasta contendo um `pubspec.yaml` executando `flutter pub get`.
 
-### Executando os Projetos
-Neste passo eu suponho que você já utilize o Flutter e tenha um emulador instalado ou um dispositivo físico instalado no seu computador, caso nao tenha, siga o **Get Started** no site do Flutter.
+### 🚀 **Executando os Projetos**
+1. Pré-requisitos:
 
-Abra o pasta do repositório no seu **VSCode**, nele na barra lateral, em Executar e Debugar (**Run and Debug**), você verá 4 opções de execução.
+Certifique-se de que o Flutter está instalado corretamente e que você tem um emulador ou dispositivo físico configurado. Caso contrário, siga o [guia de instalação]('https://docs.flutter.dev/get-started/install').
 
-![alt text](image.png)
+2. Abrir o Projeto:
 
-Aqui é possível executar o app **Be Talent** e o app de exemplos do Design System, o **Design System Example**.
+Abra o repositório no seu editor de código, como o VSCode.
 
-Depois de selecionar e executar, você verá o app ser instalado e iniciado no seu dispositivo, assim como é possível ver na sessão de demonstração, no início desse arquivo.
+3. Executar os Apps:
 
+Na barra lateral de Run and Debug, você verá 4 opções de execução:
 
-### Melhorias e Ajustes Futuros
-Nem tudo está perfeito, e sempre há meios de melhorar nossa implementações, e para este projeto a principal melhoria e ajuste futuro são relacionadas a ajustes do próprio Flutter.
+![Run and Debug](.github/uploads/image.png)
 
-A primeira como mencionei é no tratamento dos workspaces, com isso em repositórios monorepo, ficará mais fácil gerenciar as dependências dos projetos em qualquer lugar, assim ao executar o comando `flutter pub get` em qualquer lugar, ele irá verificar a baixar todas as dependências para uma única pasta na raiz do repositório, onde ficará o seu arquivo `pubspec.yaml` principal.
-Para acompanhar a issue, acesse o link [aqui]('https://github.com/flutter/flutter/issues/160142').
+    - Be Talent: O app principal do desafio.
+    - Design System Example: Um app de exemplo para testar todos os componentes do design system.
 
-Outra melhoria se deve ao gerenciamento das fontes, há um problema com o peso (*weight*) das fontes nativas do iOS.
-O iOS tem como fonte principal a *Helvética*, a mesma utilizada para este projeto. Com isso tive um problema que o peso da fonte não era aplicado no iOS, mas funcionava perfeitamente no Android. Depois de muitas tentativas consegui observar que era um problema com o iOS, que nao aceitava o peso da fonte, com isso abri uma issue no repositório do Flutter, e descobri que ocorre também com fontes nativas em Chinês e Japonês. Fortalecendo o que havia notado.
-Fiz uma ajuste para reconhecer a fonte, alterando seu nome na importação do assets, forçando o sistema reconhecer como uma fonte diferente e assim carregar meu asset corretamente. Para acompanhar também, pode acessar o link [aqui]('https://github.com/flutter/flutter/issues/163699')
+4. Depois de selecionar o app, clique em Run e veja a magia acontecer! ✨
 
+### ⚙️ **Melhorias e Ajustes Futuros**
+Como em todo projeto, sempre há espaço para melhorias! Aqui estão algumas áreas que poderiam ser aprimoradas:
+
+1. Melhoria no Gerenciamento de Workspaces:
+Atualmente, há um problema com o Dart e os workspaces ao gerenciar dependências em repositórios monorepo. Idealmente, ao rodar flutter pub get, todas as dependências deveriam ser centralizadas em uma pasta na raiz do repositório. Para acompanhar a issue no GitHub, clique aqui.
+
+2. Fontes no iOS:
+Durante o desenvolvimento, encontrei um problema com o peso da fonte (weight) da Helvetica no iOS. Ele funcionava bem no Android, mas o iOS não aplicava o peso corretamente. Após abrir uma issue no GitHub, descobri que este problema também afeta fontes nativas em Chinês e Japonês. Para resolver isso, fiz um ajuste na importação do asset da fonte, garantindo que o iOS reconhecesse corretamente o peso. Para acompanhar a issue, clique aqui.
+
+### 🎉 **Conclusão**
+Este projeto foi uma ótima oportunidade para explorar as novas funcionalidades do Flutter, como workspaces e Cubit para gerenciamento de estado, além de proporcionar uma ótima base para futuras melhorias e inovações. 🏆
